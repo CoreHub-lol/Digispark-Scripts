@@ -3,10 +3,10 @@
   <h1>DigiSpark Scripts Collection</h1>
   <p>A lightweight and powerful collection of ready-to-use Digispark scripts for automation, USB keystroke attacks, and custom payload development.</p>
 
-  [![GitHub stars](https://img.shields.io/github/stars/yourusername/digispark-scripts?style=for-the-badge&logo=github&color=blue)](https://github.com/yourusername/digispark-scripts/stargazers)
-  [![GitHub forks](https://img.shields.io/github/forks/yourusername/digispark-scripts?style=for-the-badge&logo=github&color=blue)](https://github.com/yourusername/digispark-scripts/network/members)
-  [![GitHub issues](https://img.shields.io/github/issues/yourusername/digispark-scripts?style=for-the-badge&logo=github&color=blue)](https://github.com/yourusername/digispark-scripts/issues)
-  [![GitHub license](https://img.shields.io/github/license/yourusername/digispark-scripts?style=for-the-badge&logo=github&color=blue)](https://github.com/yourusername/digispark-scripts/blob/main/LICENSE)
+  [![GitHub stars](https://img.shields.io/github/stars/corehub-lol/digispark-scripts?style=for-the-badge&logo=github&color=blue)](https://github.com/yourusername/digispark-scripts/stargazers)
+  [![GitHub forks](https://img.shields.io/github/forks/corehub-lol/digispark-scripts?style=for-the-badge&logo=github&color=blue)](https://github.com/yourusername/digispark-scripts/network/members)
+  [![GitHub issues](https://img.shields.io/github/issues/corehub-lol/digispark-scripts?style=for-the-badge&logo=github&color=blue)](https://github.com/yourusername/digispark-scripts/issues)
+  [![GitHub license](https://img.shields.io/github/license/corehub-lol/digispark-scripts?style=for-the-badge&logo=github&color=blue)](https://github.com/yourusername/digispark-scripts/blob/main/LICENSE)
   [![Maintenance](https://img.shields.io/maintenance/yes/2025?style=for-the-badge&logo=github&color=blue)](https://github.com/yourusername/digispark-scripts/commits/main)
 </div>
 
