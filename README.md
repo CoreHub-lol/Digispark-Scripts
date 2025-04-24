@@ -68,11 +68,9 @@
 
 ### Windows Scripts
 
-| Script | Description | Difficulty |
-|--------|-------------|------------|
-| `win_rickroll.ino` | Opens a Rick Astley video in the browser | ★ |
-| `win_reverse_shell.ino` | Creates a reverse shell connection | ★★★ |
-| `win_wifi_grabber.ino` | Extracts and exfiltrates WiFi passwords | ★★ |
+| Script | Description |
+|--------|-------------|
+| [DiscordGrabber](https://github.com/CoreHub-lol/Digispark-Scripts/tree/main/Discord%20Token%20Grabber) | Discord token and information grabber | 
 
 
 ## Contributing
