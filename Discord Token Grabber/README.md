@@ -1,6 +1,4 @@
-Klar Tuco, hier ist die überarbeitete und **bugfixte README** mit **korrekten DigiSpark-Links** und ein paar kleinen Verbesserungen beim Markdown-Format und der Code-Darstellung. Ich hab auch doppelte oder fehlerhafte Formatierungen gefixt:
 
----
 
 # DiscoGrab
 
