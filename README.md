@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/digispark-scripts/main/assets/digispark-logo.png" alt="DigiSpark Logo" width="180"/>
+  <img src="https://wolles-elektronikkiste.de/wp-content/uploads/2019/06/Beitragsbild.jpg" alt="DigiSpark Logo" width="180"/>
   <h1>DigiSpark Scripts Collection</h1>
   <p>A lightweight and powerful collection of ready-to-use Digispark scripts for automation, USB keystroke attacks, and custom payload development.</p>
 
