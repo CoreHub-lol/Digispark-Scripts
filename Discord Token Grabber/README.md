@@ -1,3 +1,7 @@
+Klar Tuco, hier ist die überarbeitete und **bugfixte README** mit **korrekten DigiSpark-Links** und ein paar kleinen Verbesserungen beim Markdown-Format und der Code-Darstellung. Ich hab auch doppelte oder fehlerhafte Formatierungen gefixt:
+
+---
+
 # DiscoGrab
 
 A DigiSpark-based tool for educational purposes that demonstrates how Discord tokens can be captured using a combination of Python and DigiSpark scripts.
@@ -25,17 +29,17 @@ A DigiSpark-based tool for educational purposes that demonstrates how Discord to
 
 DiscoGrab is a demonstration tool that shows how Discord tokens can be captured using a DigiSpark board. The project consists of two main components:
 
-1. **Python Script**: Captures Discord tokens and sends them to a Discord webhook
-2. **DigiSpark Script**: Deploys the Python executable on the target system
+1. **Python Script** – Captures Discord tokens and sends them to a Discord webhook  
+2. **DigiSpark Script** – Deploys the Python executable on the target system
 
-This project is based on the [CoreHub-lol/DiscoGrab](https://github.com/CoreHub-lol/DiscoGrab) repository.
+This project is based on the [corehub-lol/DiscoGrab](https://github.com/corehub-lol/DiscoGrab) repository.
 
 ## Disclaimer
 
-**IMPORTANT**: This tool is provided for **EDUCATIONAL PURPOSES ONLY**. 
+**IMPORTANT**: This tool is provided for **EDUCATIONAL PURPOSES ONLY**.
 
-- Using this tool to access accounts without explicit permission is illegal and unethical
-- The author assumes no liability for misuse of this software
+- Using this tool to access accounts without explicit permission is illegal and unethical  
+- The author assumes no liability for misuse of this software  
 - Use responsibly and only on systems you own or have explicit permission to test
 
 ## Requirements
@@ -43,7 +47,7 @@ This project is based on the [CoreHub-lol/DiscoGrab](https://github.com/CoreHub-
 - [Python 3.6+](https://www.python.org/downloads/)
 - [PyInstaller](https://pyinstaller.org/en/stable/)
 - [Arduino IDE](https://www.arduino.cc/en/software)
-- [DigiSpark ATtiny85 board](http://digistump.com/products/1)
+- [DigiSpark ATtiny85 board](https://www.digistump.com/products/1)
 - [DigiSpark Arduino Library](https://github.com/digistump/DigistumpArduino)
 - GitHub account (for hosting the executable)
 
@@ -52,31 +56,35 @@ This project is based on the [CoreHub-lol/DiscoGrab](https://github.com/CoreHub-
 ### Python Script Setup
 
 1. Clone the DiscoGrab repository:
-   \`\`\`bash
-   git clone https://github.com/CoreHub-lol/DiscoGrab.git
+
+   ```bash
+   git clone https://github.com/corehub-lol/DiscoGrab.git
    cd DiscoGrab
-   \`\`\`
+   ```
 
 2. Open `main.py` in your preferred text editor
 
 3. Locate the webhook URL line and replace it with your Discord webhook:
+
    ```python
    WEBHOOK_URL = "YOUR_DISCORD_WEBHOOK_URL_HERE"
-   \`\`\`
+   ```
 
 4. Save the file
 
 ### Creating the Executable
 
 1. Install PyInstaller if you haven't already:
-   \`\`\`bash
+
+   ```bash
    pip install pyinstaller
-   \`\`\`
+   ```
 
 2. Compile the Python script into an executable:
-   \`\`\`bash
+
+   ```bash
    pyinstaller --onefile --noconsole main.py
-   \`\`\`
+   ```
 
 3. The executable will be created in the `dist` folder
 
@@ -89,12 +97,14 @@ This project is based on the [CoreHub-lol/DiscoGrab](https://github.com/CoreHub-
 
 1. Install the Arduino IDE and set it up for DigiSpark:
    - Go to `File > Preferences`
-   - Add `http://digistump.com/package_digistump_index.json` to Additional Board Manager URLs
+   - Add this URL to *Additional Board Manager URLs*:  
+     ```
+     http://digistump.com/package_digistump_index.json
+     ```
    - Go to `Tools > Board > Boards Manager`
-   - Search for "Digistump AVR Boards" and install
+   - Search for **Digistump AVR Boards** and install it
 
-2. Open the provided `main.ino` file in Arduino IDE. The code should look like this:
-   
+2. Open the provided `main.ino` file in Arduino IDE
 
 3. Replace `YOUR DOWNLOAD LINK` in line 18 with the GitHub download link to your executable
 
@@ -106,9 +116,10 @@ This project is based on the [CoreHub-lol/DiscoGrab](https://github.com/CoreHub-
 
 2. Open the `main.ino` file in Arduino IDE
 
-3. Select `Tools > Board > Digispark (Default - 16.5MHz)`
+3. Select:  
+   `Tools > Board > Digispark (Default - 16.5MHz)`
 
-4. Click the Upload button
+4. Click the **Upload** button
 
 5. When prompted, plug in your DigiSpark board
 
@@ -136,19 +147,28 @@ This project is based on the [CoreHub-lol/DiscoGrab](https://github.com/CoreHub-
 
 Contributions for educational improvements are welcome:
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -m 'Add educational improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
+1. Fork the repository  
+2. Create your feature branch:  
+   ```bash
+   git checkout -b feature/improvement
+   ```
+3. Commit your changes:  
+   ```bash
+   git commit -m "Add educational improvement"
+   ```
+4. Push to the branch:  
+   ```bash
+   git push origin feature/improvement
+   ```
 5. Open a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
   <sub>Created for educational purposes only. Use responsibly.</sub>
 </div>
-\`\`\`
+
