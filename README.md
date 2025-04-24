@@ -33,7 +33,7 @@
 ### Prerequisites
 
 - [Arduino IDE](https://www.arduino.cc/en/software)
-- [Digispark ATtiny85 board](http://digistump.com/products/1)
+- [Digispark ATtiny85 board](https://de.aliexpress.com/item/2040316211.html?src=google&pdp_npi=4%40dis!EUR!1.84!1.75!!!!!%40!58307777832!ppc!!!&src=google&albch=shopping&acnt=272-267-0231&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&&albagn=888888&&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=de2040316211&ds_e_product_merchant_id=107407105&ds_e_product_country=DE&ds_e_product_language=de&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=20542169669&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gbraid=0AAAAAoukdWMP8Ej88kFYFSe-XVBW1T4BG&gclid=CjwKCAjwwqfABhBcEiwAZJjC3vJPi5uFPeUgyYL6DskiwiOisCpTIQfTVG5GWgdOon4290xa4Vv7ThoCAsoQAvD_BwE)
 - [Digistump Drivers](http://digistump.com/wiki/digispark/tutorials/connecting)
 
 ### Setup
