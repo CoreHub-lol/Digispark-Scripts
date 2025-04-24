@@ -81,7 +81,7 @@ This project is based on the [corehub-lol/DiscoGrab](https://github.com/corehub-
 2. Compile the Python script into an executable:
 
    ```bash
-   pyinstaller --onefile --noconsole main.py
+   python -m PyInstaller --onefile main.py
    ```
 
 3. The executable will be created in the `dist` folder
