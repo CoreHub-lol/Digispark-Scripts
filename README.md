@@ -42,15 +42,12 @@
 
 2. **Add Digistump board to Arduino IDE:**
    - Go to `File > Preferences`
-   - Add `http://digistump.com/package_digistump_index.json` to Additional Board Manager URLs
+   - Add `https://raw.githubusercontent.com/digistump/arduino-boards-index/master/package_digistump_index.json` to Additional Board Manager URLs
    - Go to `Tools > Board > Boards Manager`
    - Search for "Digistump AVR Boards" and install
 
-3. **Clone this repository:**
-   \`\`\`bash
-   git clone https://github.com/yourusername/digispark-scripts.git
-   cd digispark-scripts
-   \`\`\`
+3. **Chose one of our scripts**
+  
 
 4. **Open a script in Arduino IDE:**
    - Browse to the script you want to use
@@ -77,21 +74,6 @@
 | `win_reverse_shell.ino` | Creates a reverse shell connection | ★★★ |
 | `win_wifi_grabber.ino` | Extracts and exfiltrates WiFi passwords | ★★ |
 
-### macOS Scripts
-
-| Script | Description | Difficulty |
-|--------|-------------|------------|
-| `mac_terminal_prank.ino` | Executes a harmless terminal prank | ★ |
-| `mac_screen_capture.ino` | Takes screenshots and saves them | ★★ |
-| `mac_keyboard_remap.ino` | Temporarily remaps keyboard keys | ★★ |
-
-### Linux Scripts
-
-| Script | Description | Difficulty |
-|--------|-------------|------------|
-| `linux_fork_bomb.ino` | Creates a harmless fork bomb | ★★ |
-| `linux_backdoor.ino` | Creates a simple backdoor | ★★★ |
-| `linux_user_add.ino` | Adds a new user account | ★★ |
 
 ## Contributing
 
@@ -109,48 +91,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-<div align="center">
-  <sub>Built with care by <a href="https://github.com/yourusername">Your Name</a></sub>
-</div>
-\`\`\`
 
-## Key Improvements
-
-1. **Clean Professional Structure**:
-   - Hierarchical organization with clear section headers
-   - Table of Contents for easy navigation
-   - Centered header with logo and badges
-
-2. **Enhanced Badges**:
-   - Upgraded to the more professional "for-the-badge" style
-   - Consistent blue color scheme
-   - Added GitHub logo to each badge
-
-3. **Better Content Organization**:
-   - Detailed tables for script categories
-   - Included difficulty ratings with star symbols
-   - Clear step-by-step instructions with proper formatting
-
-4. **Visual Improvements**:
-   - Proper code blocks with syntax highlighting
-   - Warning notes with clear formatting
-   - Consistent bold text for emphasis
-
-5. **Additional Sections**:
-   - Usage section with clear instructions
-   - Expanded Script Categories with tables
-   - Contributing guidelines with step-by-step process
-   - Clean footer with attribution
-
-This Markdown file will render beautifully on GitHub while maintaining a professional appearance without any emojis.
-
-<Actions>
-  <Action name="Add screenshots section" description="Include screenshots of scripts in action" />
-  <Action name="Create script template" description="Add a template for creating new scripts" />
-  <Action name="Add troubleshooting guide" description="Create a section for common issues and solutions" />
-  <Action name="Add security disclaimer" description="Include responsible usage disclaimer" />
-  <Action name="Create advanced usage examples" description="Add examples of combining multiple scripts" />
-</Actions>
-
-\`\`\`
 
