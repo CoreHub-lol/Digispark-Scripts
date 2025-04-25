@@ -1,6 +1,5 @@
 
 
-```markdown
 # DiscoGrab
 
 A DigiSpark-based tool for educational purposes that demonstrates how Discord tokens can be captured using a combination of Python and DigiSpark scripts.
