@@ -1,8 +1,4 @@
-Got it! Here's your fully fixed, cleaned-up, **English version** of the `README.md`, with the video properly embedded (as a clickable image for GitHub):
 
----
-
-```markdown
 # DiscoGrab
 
 A DigiSpark-based tool for educational purposes that demonstrates how Discord tokens can be captured using a combination of Python and DigiSpark scripts.
