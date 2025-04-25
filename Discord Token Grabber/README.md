@@ -1,4 +1,8 @@
+Got it! Here's your fully fixed, cleaned-up, **English version** of the `README.md`, with the video properly embedded (as a clickable image for GitHub):
 
+---
+
+```markdown
 # DiscoGrab
 
 A DigiSpark-based tool for educational purposes that demonstrates how Discord tokens can be captured using a combination of Python and DigiSpark scripts.
@@ -29,33 +33,33 @@ A DigiSpark-based tool for educational purposes that demonstrates how Discord to
 
 ## Overview
 
-DiscoGrab is a demonstration tool that shows how Discord tokens can be captured using a DigiSpark board. The project consists of two main components:
+DiscoGrab is a demonstration tool that shows how Discord tokens can be captured using a DigiSpark board. It consists of two key components:
 
-1. **Python Script** – Captures Discord tokens and sends them to a Discord webhook  
-2. **DigiSpark Script** – Deploys the Python executable on the target system
+1. **Python Script** – Extracts Discord tokens and sends them to a webhook  
+2. **DigiSpark Script** – Delivers the Python executable onto the target machine via simulated keystrokes
 
-This project is based on the [corehub-lol/DiscoGrab](https://github.com/corehub-lol/DiscoGrab) repository.
+This project is hosted on [corehub-lol/DiscoGrab](https://github.com/corehub-lol/DiscoGrab).
 
 ---
 
 ## Disclaimer
 
-**IMPORTANT**: This tool is provided for **EDUCATIONAL PURPOSES ONLY**.
+> ⚠️ **EDUCATIONAL USE ONLY**
 
-- Using this tool to access accounts without explicit permission is illegal and unethical  
-- The author assumes no liability for misuse of this software  
-- Use responsibly and only on systems you own or have explicit permission to test
+- This project is intended **only for ethical hacking and educational demonstration**
+- Do **not** use this tool to access any system or account without explicit permission
+- The author is not responsible for any misuse
 
 ---
 
 ## Requirements
 
 - [Python 3.6+](https://www.python.org/downloads/)
-- [PyInstaller](https://pyinstaller.org/en/stable/)
+- [PyInstaller](https://pyinstaller.org/)
 - [Arduino IDE](https://www.arduino.cc/en/software)
 - [DigiSpark ATtiny85 board](https://www.digistump.com/products/1)
 - [DigiSpark Arduino Library](https://github.com/digistump/DigistumpArduino)
-- GitHub account (for hosting the executable)
+- A GitHub account to host your executable
 
 ---
 
@@ -68,80 +72,86 @@ git clone https://github.com/corehub-lol/DiscoGrab.git
 cd DiscoGrab
 ```
 
-1. Open `main.py` in your editor  
-2. Ersetze die Zeile mit dem Webhook durch deinen eigenen:
+1. Open `main.py` in any editor  
+2. Replace the webhook placeholder with your actual Discord webhook:
 
 ```python
 WEBHOOK_URL = "YOUR_DISCORD_WEBHOOK_URL_HERE"
 ```
 
-3. Speichern
+3. Save the file
 
 ---
 
 ### Creating the Executable
 
-1. Installiere PyInstaller:
+1. Install PyInstaller:
 
 ```bash
 pip install pyinstaller
 ```
 
-2. Erstelle das Executable:
+2. Create the executable:
 
 ```bash
 python -m PyInstaller --onefile main.py
 ```
 
-3. Die Datei befindet sich im `dist`-Ordner  
-4. Lade sie auf GitHub als Release-Asset hoch und kopiere den Direktlink
+3. The `.exe` will be created in the `dist` folder  
+4. Upload the file to your GitHub repo (create a release)  
+5. Copy the **direct download link** for use in the DigiSpark script
 
 ---
 
 ### DigiSpark Script Setup
 
-1. Installiere Arduino IDE und richte DigiSpark ein:
-   - `File > Preferences > Additional Board Manager URLs`  
-     ```http
+1. Install the Arduino IDE and add the DigiSpark boards:
+   - Go to `File > Preferences`
+   - Paste this into **Additional Board Manager URLs**:  
+     ```
      http://digistump.com/package_digistump_index.json
      ```
-   - `Tools > Board > Boards Manager > Digistump AVR Boards` installieren
+   - Then go to `Tools > Board > Boards Manager`
+   - Search for **Digistump AVR Boards** and install them
 
-2. Öffne `main.ino`  
-3. Ersetze `YOUR DOWNLOAD LINK` in Zeile 18 mit deinem GitHub-Link  
-4. Speichern
+2. Open `main.ino` in the Arduino IDE  
+3. Replace the placeholder link on line 18 with your GitHub direct download URL  
+4. Save the file
 
 ---
 
 ## Usage
 
-1. Verbinde DigiSpark mit dem PC  
-2. Öffne `main.ino` in der Arduino IDE  
-3. Wähle Board: `Digispark (Default - 16.5MHz)`  
-4. Drücke Upload  
-5. Wenn aufgefordert: DigiSpark anschließen
+1. Plug your DigiSpark into your own PC (for testing)  
+2. Open `main.ino` in the Arduino IDE  
+3. Choose:
+   ```
+   Tools > Board > Digispark (Default - 16.5MHz)
+   ```
+4. Click **Upload**  
+5. When prompted, insert the DigiSpark
 
-Was passiert:
-- PowerShell wird geöffnet  
-- Executable wird heruntergeladen  
-- Es wird ausgeführt und Token + Infos an deinen Webhook gesendet  
-- Danach wird es gelöscht
+What happens:
+- PowerShell opens automatically on the target machine  
+- Your hosted `.exe` is downloaded  
+- It's executed to grab Discord tokens and send them to your webhook  
+- The executable is deleted to avoid detection
 
 ---
 
 ## How It Works
 
-### `main.ino`
-- Simuliert Tastatureingabe über USB
-- Öffnet PowerShell
-- Führt einen Befehl aus, der dein Executable herunterlädt und ausführt
-- Löscht es danach
+### DigiSpark script (`main.ino`):
+- Simulates keyboard input
+- Opens PowerShell
+- Executes a one-liner to download and run the payload
+- Deletes the payload after execution
 
-### `main.py`
-- Durchsucht Discord Speicherorte
-- Holt gefundene Tokens
-- Sendet sie über Webhook
-- Sammelt PC-Infos (Windows only)
+### Python script (`main.py`):
+- Looks for Discord token storage paths
+- Extracts tokens if found
+- Sends them via your Discord webhook
+- Optionally collects basic system info
 
 ---
 
@@ -149,26 +159,24 @@ Was passiert:
 
 [![Watch the video](https://img.youtube.com/vi/58ugvXHy0mI/hqdefault.jpg)](https://www.youtube.com/watch?v=58ugvXHy0mI)
 
-> 🎥 **DiscoGrab Setup Tutorial** – auf Deutsch
+> 📺 **Click the thumbnail above to watch the tutorial (German only)**
 
 ---
 
 ## Contributing
 
-Contributions for educational improvements are welcome:
+Contributions are welcome if they are educational and constructive.
 
 ```bash
-# Fork und Branch erstellen
-git checkout -b feature/improvement
+# Fork the repo
+git checkout -b feature/your-feature-name
 
-# Änderungen committen
-git commit -m "Add educational improvement"
+# Make your changes
+git commit -m "Add new educational feature"
 
-# Pushen
-git push origin feature/improvement
+# Push and open a PR
+git push origin feature/your-feature-name
 ```
-
-Dann bitte ein Pull Request stellen.
 
 ---
 
@@ -179,7 +187,10 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 ---
 
 <div align="center">
-  <sub>Created for educational purposes only. Use responsibly.</sub>
+  <sub>Built for ethical use and learning. Respect privacy.</sub>
 </div>
 ```
 
+---
+
+Let me know if you want this exported as a `.md` file or need help adding it to the repo.
